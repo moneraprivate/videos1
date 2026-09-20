@@ -1,25 +1,32 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Video</title>
 <style>
- body{background:#000;display:flex;justify-content:center;align-items:center;min-height:100vh;margin:0;padding:10px}
- .player{width:100%;max-width:700px;position:relative;background:#000;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.8)}
- video{width:100%;height:auto;display:block}
- #clickLayer{position:absolute;inset:0;z-index:99;background:rgba(0,0,0,0.15);display:flex;justify-content:center;align-items:center;cursor:pointer}
- #clickLayer span{width:75px;height:75px;background:#fff;border-radius:50%;display:flex;justify-content:center;align-items:center;font-size:32px;box-shadow:0 4px 15px rgba(0,0,0,.5)}
+body{margin:0;background:#000;display:flex;justify-content:center;align-items:center;min-height:100vh}
+.box{width:100%;max-width:720px;position:relative}
+video{width:100%;display:block}
+#over{position:absolute;inset:0;display:flex;justify-content:center;align-items:center;background:rgba(0,0,0,.2);cursor:pointer}
+#over b{width:70px;height:70px;background:#fff;border-radius:50%;display:flex;justify-content:center;align-items:center;font-size:28px}
 </style>
-<script src="https://pl31406339.profitableratecpmnetwork.com/b1/33/05/b13305c9fcacf409e43c8bd554a00e5e.js"></script>
-<!-- <script src='//plXXXX.profitablegatecpm.com/XX/XXXX.js'></script> -->
 </head>
 <body>
-
-<div class="player">
-  <video id="vid" controls playsinline preload="metadata">
-    <!-- GANTI LINK DI BAWAH INI DENGAN LINK VIDEO DARI ISSUE GITHUB KAMU -->
-    <source src="https://files.catbox.moe/w6vlga.mp4">
-
-<script src="https://pl31406339.profitableratecpmnetwork.com/b1/33/05/b13305c9fcacf409e43c8bd554a00e5e.js"></script>
-
+<div class="box">
+<video id="https://files.catbox.moe/w6vlga.mp4" controls playsinline>
+<source src="https://files.catbox.moe/w6vlga.mp4" type="video/mp4">
+</video>
+<div id="over" onclick="go()"><b>▶</b></div>
+</div>
+<script>
+var ad="https://www.profitablegatecpm.com/XXXX-GANTI-KODE-ADSTERRA-KAMU";
+var klik=false;
+function go(){
+if(!klik){window.open(ad,"_blank");klik=true}
+document.getElementById("over").style.display="none";
+document.getElementById("v").play();
+}
+</script>
+</body>
+</html>
